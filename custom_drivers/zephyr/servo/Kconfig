@@ -1,0 +1,5 @@
+config SERVO
+	bool "Include Drivers for odl blind modules"
+	depends on CUSTOM_DRIVERS && PWM
+	help
+	  Include Drivers for odl blind modules

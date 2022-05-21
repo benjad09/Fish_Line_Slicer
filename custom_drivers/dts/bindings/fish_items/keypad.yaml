@@ -1,0 +1,19 @@
+description: |
+    defines a keypad button 0 is row 0 col 0 ect..
+
+compatible: "buttons,keypad"
+
+include: base.yaml
+
+properties:
+    column-gpios:
+      type: phandle-array
+      required: true
+      description: |
+        the gpios that define the column of a keypad
+    rows-gpios:
+      type: phandle-array
+      required: true
+      description: |
+        the gpios that define the rows of a keypad
+

@@ -1,0 +1,11 @@
+config P1_BUTTONS
+	bool "Include Drivers for odl blind modules"
+	depends on P1_DRIVERS
+	help
+	  Include Drivers for odl blind modules
+
+config P1_KEYPAD
+	bool "Include Drivers for odl blind modules"
+	depends on P1_BUTTONS
+	help
+	  Include Drivers for odl blind modules

@@ -1,0 +1,5 @@
+config STEPPER
+	bool "Include Drivers for odl blind modules"
+	depends on CUSTOM_DRIVERS && GPIO
+	help
+	  Include Drivers for odl blind modules

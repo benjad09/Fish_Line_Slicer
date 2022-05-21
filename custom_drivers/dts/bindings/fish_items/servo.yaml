@@ -1,0 +1,34 @@
+description: |
+    congragulations zephyr you broke me SO Ill jump through your dumb hoops but in the end I win
+
+compatible: "servo,pwm"
+
+include: base.yaml
+
+properties:
+    pwms:
+      type: phandle-array
+      required: true
+      description: |
+        the pwm instance the servo is connected to
+
+    pulse_width_us:
+      type: int
+      required: false
+      default: 20000
+      description: |
+        the standard pusle length to run the servo at
+
+    pulse_width_min_us:
+      type: int
+      required: false
+      default: 544
+      description: |
+        how long the pules that corisponds to 0 degrees is
+
+    pulse_width_max_us:
+      type: int
+      required: false
+      default: 2400
+      description: |
+        how long the pules that corisponds to 180 degrees is

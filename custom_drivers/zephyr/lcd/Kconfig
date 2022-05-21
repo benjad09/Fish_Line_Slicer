@@ -1,0 +1,11 @@
+config CUSTOM_LCD
+	bool "include drivers for custom lcds"
+	depends on CUSTOM_DRIVERS
+	help
+	  Include Drivers for odl blind modules
+
+config CUSTOM_HD44780
+	bool "include drivers for custom lcd with a I2C HD44780"
+	depends on CUSTOM_LCD && I2C
+	help
+	  Include Drivers for odl blind modules

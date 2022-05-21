@@ -1,0 +1,22 @@
+description: |
+    describes the HD4478UI2C
+
+compatible: "lcd,hd4478ui2c"
+
+#include: [i2c-device.yaml, base.yaml]
+include: i2c-device.yaml
+
+properties:
+    lcd_rows:
+      type: int
+      required: false
+      default: 4
+      description: |
+        how many lcd rows
+
+    lcd_cols:
+      type: int
+      required: false
+      default: 20
+      description: |
+        how many lec lines

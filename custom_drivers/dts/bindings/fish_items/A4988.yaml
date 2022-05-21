@@ -1,0 +1,23 @@
+description: |
+    a4988 stepper driver
+
+compatible: "stepper,afour"
+
+include: base.yaml
+
+properties:
+    step-gpios:
+      type: phandle-array
+      required: true
+      description: |
+        the gpios that define the column of a keypad
+    dir-gpios:
+      type: phandle-array
+      required: true
+      description: |
+        the gpios that define the rows of a keypad
+    en-gpios:
+      type: phandle-array
+      required: true
+      description: |
+        the gpios that define the column of a keypad

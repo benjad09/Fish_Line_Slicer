@@ -1,0 +1,11 @@
+config CUSTOM_DRIVERS
+	bool "enable custom drivers"
+	depends on APPLICATION_DEFINED_SYSCALL && !USERSPACE
+	help
+		This Function enables all of phase one drivers ensures that config is setup to build them correctly
+
+
+rsource "buttons/Kconfig"
+rsource "lcd/Kconfig"
+rsource "servo/Kconfig"
+rsource "stepper/Kconfig"
